@@ -1,0 +1,49 @@
+{
+  "id": "timeline",
+  "name": "Timeline",
+  "tagline": "Cream background with visual career timeline",
+  "description": "Your career as a visual timeline. Centered hero, alternating left/right timeline entries with color-coded dots per entry type, and a clean narrative flow from start to now.",
+  "best_for": ["senior professionals", "career changers", "people with rich histories", "executives"],
+  "preview_image": "/templates/timeline.png",
+
+  "defaults": {
+    "accent_color": "#0E8C7F",
+    "color_mode": "light",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700], "font_size_pt": 14, "line_height": 1.0, "letter_spacing_em": -0.04 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "single-column",
+    "container_max_px": 1000,
+    "section_gap_px": 72,
+    "page_padding_x_px": 40,
+    "page_padding_y_px": 56
+  },
+
+  "tokens": {
+    "background": "#FBFBF9",
+    "surface": "#FFFFFF",
+    "ink": "#16201E",
+    "ink_muted": "#5F6B68",
+    "border": "#E6E8E6",
+    "radius_card_px": 10,
+    "radius_button_px": 8,
+    "radius_image_px": 8
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "centered-hero", "visible": true, "order": 0 },
+    { "id": "experience", "type": "experience", "layout": "timeline",      "visible": true, "order": 1 },
+    { "id": "projects",   "type": "projects",   "layout": "card-grid",     "visible": true, "order": 2 },
+    { "id": "education",  "type": "education",  "layout": "timeline",      "visible": true, "order": 3 },
+    { "id": "about",      "type": "about",      "layout": "prose",         "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "tag-cloud",     "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "centered",      "visible": true, "order": 999 }
+  ]
+}

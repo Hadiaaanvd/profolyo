@@ -1,0 +1,69 @@
+{
+  "id": "atelier",
+  "name": "Atelier",
+  "tagline": "Two-column studio portfolio with a sticky bio",
+  "description": "Sophisticated split layout. Your name, headline, contact, and social links stay pinned on the left as the right column scrolls through your work, experience, and skills.",
+  "best_for": ["senior ICs", "studios", "consultants", "indie founders"],
+  "preview_image": "/templates/atelier.png",
+
+  "defaults": {
+    "accent_color": "#0A6E48",
+    "color_mode": "light",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": {
+      "font_family": "Bricolage Grotesque",
+      "font_weights": [500, 600],
+      "font_size_pt": 11.5,
+      "line_height": 1.1,
+      "letter_spacing_em": -0.02
+    },
+    "body": {
+      "font_family": "Inter",
+      "font_weights": [400, 500],
+      "font_size_pt": 10,
+      "line_height": 1.55,
+      "letter_spacing_em": 0
+    },
+    "mono": {
+      "font_family": "JetBrains Mono",
+      "font_weights": [400, 500],
+      "font_size_pt": 9,
+      "line_height": 1.45
+    }
+  },
+
+  "layout": {
+    "kind": "two-column-sticky",
+    "container_max_px": 1200,
+    "sidebar_width_px": 360,
+    "sidebar_position": "left",
+    "sidebar_sticky": true,
+    "section_gap_px": 80,
+    "page_padding_x_px": 48,
+    "page_padding_y_px": 80
+  },
+
+  "tokens": {
+    "background": "#FAFAF7",
+    "surface": "#FFFFFF",
+    "ink": "#1F1E1A",
+    "ink_muted": "#6F6D63",
+    "border": "#ECEAE2",
+    "radius_card_px": 8,
+    "radius_button_px": 8,
+    "radius_image_px": 6
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "sidebar-bio",      "visible": true, "order": 1, "options": { "show_availability_pill": true, "show_avatar": true, "show_socials": true } },
+    { "id": "work",       "type": "projects",   "layout": "vertical-cards",   "visible": true, "order": 2, "options": { "show_status": true, "show_tagline": true, "show_tech": true, "max_visible": 6, "image_position": "top" } },
+    { "id": "about",      "type": "about",      "layout": "section-heading",  "visible": true, "order": 3 },
+    { "id": "experience", "type": "experience", "layout": "two-column-row",   "visible": true, "order": 4, "options": { "show_highlights": true } },
+    { "id": "education",  "type": "education",  "layout": "two-column-row",   "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "category-chips",   "visible": true, "order": 6, "options": { "style": "chips" } },
+    { "id": "contact",    "type": "contact",    "layout": "inline-list",      "visible": true, "order": 7 }
+  ]
+}

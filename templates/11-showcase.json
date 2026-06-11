@@ -1,0 +1,49 @@
+{
+  "id": "showcase",
+  "name": "Showcase",
+  "tagline": "168px display name with 6-column asymmetric project grid",
+  "description": "Go big or go home. A 168px display name, bold asymmetric project tiles, and vivid accent colors. For portfolios that demand to be seen first and questioned later.",
+  "best_for": ["graphic designers", "art directors", "creative directors", "illustrators"],
+  "preview_image": "/templates/showcase.png",
+
+  "defaults": {
+    "accent_color": "#FF4B3E",
+    "color_mode": "light",
+    "density": "spacious"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [700, 800], "font_size_pt": 20, "line_height": 0.92, "letter_spacing_em": -0.04 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "full-width",
+    "container_max_px": 1320,
+    "section_gap_px": 96,
+    "page_padding_x_px": 48,
+    "page_padding_y_px": 72
+  },
+
+  "tokens": {
+    "background": "#F4F1EB",
+    "surface": "#FFFFFF",
+    "ink": "#1A1916",
+    "ink_muted": "#7A7670",
+    "border": "#E6E2D8",
+    "radius_card_px": 12,
+    "radius_button_px": 4,
+    "radius_image_px": 8
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "showcase-hero", "visible": true, "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "asymmetric-6col","visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "prose",         "visible": true, "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "card-rows",     "visible": true, "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "compact",       "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "tag-cloud",     "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "centered",      "visible": true, "order": 999 }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "atelier",
+  "name": "Atelier",
+  "tagline": "Numbered studio layout with sticky sidebar",
+  "description": "A two-column studio layout: sticky 320px sidebar holds your identity, the right column scrolls through numbered sections 01, 02, 03. Clean, considered, and architectural.",
+  "best_for": ["designers", "architects", "product designers", "design engineers"],
+  "preview_image": "/templates/atelier.png",
+
+  "defaults": {
+    "accent_color": "#0A6E48",
+    "color_mode": "light",
+    "density": "spacious"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700], "font_size_pt": 18, "line_height": 1.05, "letter_spacing_em": -0.02 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400, 500], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "sidebar-main",
+    "container_max_px": 1200,
+    "section_gap_px": 80,
+    "page_padding_x_px": 48,
+    "page_padding_y_px": 80
+  },
+
+  "tokens": {
+    "background": "#FAFAF7",
+    "surface": "#FFFFFF",
+    "ink": "#1F1E1A",
+    "ink_muted": "#6F6D63",
+    "border": "#ECEAE2",
+    "radius_card_px": 10,
+    "radius_button_px": 999,
+    "radius_image_px": 0
+  },
+
+  "sections": [
+    { "id": "hero",         "type": "hero",         "layout": "sidebar",       "visible": true,  "order": 0 },
+    { "id": "about",        "type": "about",        "layout": "prose",         "visible": true,  "order": 1 },
+    { "id": "projects",     "type": "projects",     "layout": "card-grid",     "visible": true,  "order": 2 },
+    { "id": "experience",   "type": "experience",   "layout": "timeline",      "visible": true,  "order": 3 },
+    { "id": "education",    "type": "education",    "layout": "compact",       "visible": true,  "order": 4 },
+    { "id": "skills",       "type": "skills",       "layout": "tag-cloud",     "visible": true,  "order": 5 },
+    { "id": "contact",      "type": "contact",      "layout": "sidebar",       "visible": true,  "order": 999 }
+  ]
+}

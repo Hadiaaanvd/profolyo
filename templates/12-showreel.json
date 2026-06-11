@@ -1,0 +1,49 @@
+{
+  "id": "showreel",
+  "name": "Showreel",
+  "tagline": "Dark creative with horizontal-scrolling project reel",
+  "description": "A showreel for people who make things. Dark background, 88px name, and a horizontally scrolling project reel where each card is a 560px cinematic panel. End the reel with a CTA.",
+  "best_for": ["motion designers", "creative technologists", "interactive designers", "UX engineers"],
+  "preview_image": "/templates/showreel.png",
+
+  "defaults": {
+    "accent_color": "#4338CA",
+    "color_mode": "dark",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700], "font_size_pt": 18, "line_height": 0.92, "letter_spacing_em": -0.04 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "full-width",
+    "container_max_px": 1320,
+    "section_gap_px": 80,
+    "page_padding_x_px": 56,
+    "page_padding_y_px": 72
+  },
+
+  "tokens": {
+    "background": "#0E0E12",
+    "surface": "#18181F",
+    "ink": "#F2F1EE",
+    "ink_muted": "#9B9AA4",
+    "border": "#26262F",
+    "radius_card_px": 12,
+    "radius_button_px": 6,
+    "radius_image_px": 10
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "dark-masthead", "visible": true, "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "scroll-reel",   "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "centered-prose","visible": true, "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "compact-rows",  "visible": true, "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "compact",       "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "tag-grid",      "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "centered-dark", "visible": true, "order": 999 }
+  ]
+}

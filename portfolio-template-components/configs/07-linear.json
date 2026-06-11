@@ -1,0 +1,25 @@
+{
+  "id": "linear",
+  "name": "Linear",
+  "tagline": "Single-page résumé-style portfolio, optimized for scanning",
+  "description": "Everything visible in one screen-height: name, role, recent work, experience, skills. Compact, list-heavy, print-ready. Optimized for hiring managers who skim.",
+  "best_for": ["engineers", "applying-to-jobs mode", "anyone who values skimmability"],
+  "preview_image": "/templates/linear.png",
+  "defaults": { "accent_color": "#2A6FDB", "color_mode": "light", "density": "compact" },
+  "typography": {
+    "heading": { "font_family": "Inter",          "font_weights": [600, 700], "font_size_pt": 11, "line_height": 1.1,  "letter_spacing_em": -0.01 },
+    "body":    { "font_family": "Inter",          "font_weights": [400, 500], "font_size_pt": 10, "line_height": 1.5,  "letter_spacing_em": 0 },
+    "mono":    { "font_family": "JetBrains Mono", "font_weights": [400, 500], "font_size_pt": 9,  "line_height": 1.45 }
+  },
+  "layout": { "kind": "single-column-dense", "container_max_px": 720, "section_gap_px": 40, "page_padding_x_px": 32, "page_padding_y_px": 64 },
+  "tokens": { "background": "#FFFFFF", "surface": "#FAFAF7", "ink": "#1F1E1A", "ink_muted": "#6F6D63", "border": "#ECEAE2", "radius_card_px": 4, "radius_button_px": 4, "radius_image_px": 4 },
+  "sections": [
+    { "id": "header",     "type": "hero",       "layout": "compact-header", "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "single-line",    "visible": true, "order": 2 },
+    { "id": "work",       "type": "projects",   "layout": "table-rows",     "visible": true, "order": 3, "options": { "show_status": true, "show_tech": true } },
+    { "id": "experience", "type": "experience", "layout": "table-rows",     "visible": true, "order": 4, "options": { "show_highlights": true } },
+    { "id": "education",  "type": "education",  "layout": "table-rows",     "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "inline-tags",    "visible": true, "order": 6 },
+    { "id": "contact",    "type": "contact",    "layout": "footer-line",    "visible": true, "order": 7 }
+  ]
+}

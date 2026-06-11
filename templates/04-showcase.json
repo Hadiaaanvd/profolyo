@@ -1,0 +1,66 @@
+{
+  "id": "showcase",
+  "name": "Showcase",
+  "tagline": "Bold, color-forward portfolio for visual designers",
+  "description": "Asymmetric grid, huge display type, full-bleed project hero images, color used confidently. Built for portfolios where the work needs to land at first glance.",
+  "best_for": ["visual designers", "art directors", "brand designers", "motion designers"],
+  "preview_image": "/templates/showcase.png",
+
+  "defaults": {
+    "accent_color": "#FF4B3E",
+    "color_mode": "light",
+    "density": "spacious"
+  },
+
+  "typography": {
+    "heading": {
+      "font_family": "Bricolage Grotesque",
+      "font_weights": [700, 800],
+      "font_size_pt": 16,
+      "line_height": 0.95,
+      "letter_spacing_em": -0.04
+    },
+    "body": {
+      "font_family": "Inter",
+      "font_weights": [400, 500],
+      "font_size_pt": 11,
+      "line_height": 1.5,
+      "letter_spacing_em": -0.005
+    },
+    "mono": {
+      "font_family": "JetBrains Mono",
+      "font_weights": [500],
+      "font_size_pt": 9,
+      "line_height": 1.4
+    }
+  },
+
+  "layout": {
+    "kind": "asymmetric-grid",
+    "container_max_px": 1320,
+    "section_gap_px": 120,
+    "page_padding_x_px": 40,
+    "page_padding_y_px": 64
+  },
+
+  "tokens": {
+    "background": "#F4F1EB",
+    "surface": "#FFFFFF",
+    "ink": "#0F0E0B",
+    "ink_muted": "#54514A",
+    "border": "#D9D4C5",
+    "radius_card_px": 12,
+    "radius_button_px": 999,
+    "radius_image_px": 10
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "asymmetric-mega",   "visible": true, "order": 1, "options": { "show_availability_pill": true, "show_avatar": true, "accent_block": true } },
+    { "id": "work",       "type": "projects",   "layout": "asymmetric-tiles",  "visible": true, "order": 2, "options": { "show_status": true, "show_tagline": true, "show_tech": false, "max_visible": 6, "varied_sizes": true } },
+    { "id": "about",      "type": "about",      "layout": "two-column-prose",  "visible": true, "order": 3, "options": { "show_heading": "Hello." } },
+    { "id": "experience", "type": "experience", "layout": "compact-grid",      "visible": true, "order": 4, "options": { "show_highlights": false } },
+    { "id": "education",  "type": "education",  "layout": "compact-list",      "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "marquee-row",       "visible": true, "order": 6, "options": { "style": "large_chips" } },
+    { "id": "contact",    "type": "contact",    "layout": "fullbleed-cta",     "visible": true, "order": 7, "options": { "background": "accent" } }
+  ]
+}

@@ -1,6 +1,6 @@
 # Profolyo
 
-Profolyo is a portfolio builder and editor built with Next.js 16, React 19, Tailwind CSS, and TipTap. It focuses on dynamic portfolio creation, editable portfolio sections, and reusable template components for designers and creators.
+Profolyo is a portfolio builder and editor built with Next.js 16, React 19, Tailwind CSS, and TipTap. It focuses on dynamic portfolio creation, editable portfolio sections, and reusable template components for developer, designers and creators.
 
 ## Key Features
 

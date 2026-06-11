@@ -1,0 +1,25 @@
+{
+  "id": "quartz",
+  "name": "Quartz",
+  "tagline": "Sleek modern minimalism — premium and quietly confident",
+  "description": "A confident, restrained portfolio. Soft warm-white surface, a single deep-forest accent, generous whitespace, a single featured project followed by a clean three-column grid. Made to impress at first glance without trying too hard.",
+  "best_for": ["senior ICs", "consultants", "founders", "anyone who wants to look premium without looking precious"],
+  "preview_image": "/templates/quartz.png",
+  "defaults": { "accent_color": "#2F5D3A", "color_mode": "light", "density": "comfortable" },
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [500, 600], "font_size_pt": 12, "line_height": 1.05, "letter_spacing_em": -0.025 },
+    "body":    { "font_family": "Inter",                "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": -0.005 },
+    "mono":    { "font_family": "JetBrains Mono",       "font_weights": [400, 500], "font_size_pt": 9.5, "line_height": 1.5 }
+  },
+  "layout": { "kind": "centered-single-column", "container_max_px": 1280, "section_gap_px": 96, "page_padding_x_px": 48, "page_padding_y_px": 96 },
+  "tokens": { "background": "#FAF8F2", "surface": "#FFFFFF", "ink": "#1B1F1A", "ink_muted": "#6B7066", "border": "#E5E3D8", "radius_card_px": 12, "radius_button_px": 8, "radius_image_px": 12 },
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "centered-confident", "visible": true, "order": 1, "options": { "show_availability_pill": true, "show_meta_strip": true } },
+    { "id": "work",       "type": "projects",   "layout": "featured-plus-grid", "visible": true, "order": 2, "options": { "show_status": true, "show_tagline": true, "show_tech": true, "featured_index": 0 } },
+    { "id": "about",      "type": "about",      "layout": "two-column-prose",   "visible": true, "order": 3 },
+    { "id": "experience", "type": "experience", "layout": "timeline-rows",      "visible": true, "order": 4, "options": { "show_highlights": true } },
+    { "id": "education",  "type": "education",  "layout": "side-by-side",       "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "category-chips",     "visible": true, "order": 6 },
+    { "id": "contact",    "type": "contact",    "layout": "centered-cta",       "visible": true, "order": 7 }
+  ]
+}

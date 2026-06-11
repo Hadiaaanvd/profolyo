@@ -1,0 +1,49 @@
+{
+  "id": "marquee",
+  "name": "Marquee",
+  "tagline": "Warm cream header with large portrait and editorial copy",
+  "description": "The marquee treatment: a 4/5 aspect portrait photo flanked by bold display copy. Warm cream palette, JetBrains Mono labels, and project thumbnails that feel like magazine spreads.",
+  "best_for": ["designers", "speakers", "advisors", "consultants"],
+  "preview_image": "/templates/marquee.png",
+
+  "defaults": {
+    "accent_color": "#B7410E",
+    "color_mode": "light",
+    "density": "spacious"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700, 800], "font_size_pt": 18, "line_height": 0.95, "letter_spacing_em": -0.04 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400, 500], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "full-width",
+    "container_max_px": 1320,
+    "section_gap_px": 88,
+    "page_padding_x_px": 40,
+    "page_padding_y_px": 56
+  },
+
+  "tokens": {
+    "background": "#F7F2EA",
+    "surface": "#FFF9EE",
+    "ink": "#1A1310",
+    "ink_muted": "#7A6E65",
+    "border": "#E5DDC9",
+    "radius_card_px": 8,
+    "radius_button_px": 999,
+    "radius_image_px": 8
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "portrait-hero", "visible": true, "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "thumbnail-rows","visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "prose",         "visible": true, "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "timeline",      "visible": true, "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "compact",       "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "tag-cloud",     "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "centered",      "visible": true, "order": 999 }
+  ]
+}

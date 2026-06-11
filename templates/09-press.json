@@ -1,0 +1,49 @@
+{
+  "id": "press",
+  "name": "Press",
+  "tagline": "Newspaper masthead with parchment editorial layout",
+  "description": "Your portfolio as a newspaper front page. Double-border masthead, 88px centered name, 2-column about, and project spreads styled as press articles. A portfolio that feels like it belongs on a newsstand.",
+  "best_for": ["journalists", "writers", "editors", "PR & comms professionals"],
+  "preview_image": "/templates/press.png",
+
+  "defaults": {
+    "accent_color": "#B7410E",
+    "color_mode": "light",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700, 800], "font_size_pt": 16, "line_height": 1.0, "letter_spacing_em": -0.03 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.65, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "single-column",
+    "container_max_px": 1080,
+    "section_gap_px": 80,
+    "page_padding_x_px": 40,
+    "page_padding_y_px": 56
+  },
+
+  "tokens": {
+    "background": "#FAF7EE",
+    "surface": "#FFFFFF",
+    "ink": "#1A1712",
+    "ink_muted": "#7A7268",
+    "border": "#E4DDCC",
+    "radius_card_px": 0,
+    "radius_button_px": 2,
+    "radius_image_px": 0
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "masthead",     "visible": true, "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "press-spread", "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "two-col",      "visible": true, "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "compact-rows", "visible": true, "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "compact",      "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "inline-list",  "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "centered",     "visible": true, "order": 999 }
+  ]
+}

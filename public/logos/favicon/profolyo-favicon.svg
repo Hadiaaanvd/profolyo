@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#FAFAF7"></rect>
+  <text class="mono" x="40" y="200" fill="#0A0A09">P<tspan fill="#3358FF">.</tspan></text>
+</svg>

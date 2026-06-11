@@ -1,0 +1,66 @@
+{
+  "id": "console",
+  "name": "Console",
+  "tagline": "Terminal-inspired portfolio for developers",
+  "description": "Dark, monospaced, calm. Mono headings, code-block project cards, and quiet ASCII separators. Built for engineers who'd rather show than tell.",
+  "best_for": ["developers", "infrastructure engineers", "open-source maintainers"],
+  "preview_image": "/templates/console.png",
+
+  "defaults": {
+    "accent_color": "#7BE38C",
+    "color_mode": "dark",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": {
+      "font_family": "JetBrains Mono",
+      "font_weights": [500, 600],
+      "font_size_pt": 11,
+      "line_height": 1.2,
+      "letter_spacing_em": -0.005
+    },
+    "body": {
+      "font_family": "Inter",
+      "font_weights": [400, 500],
+      "font_size_pt": 10,
+      "line_height": 1.6,
+      "letter_spacing_em": 0
+    },
+    "mono": {
+      "font_family": "JetBrains Mono",
+      "font_weights": [400, 500],
+      "font_size_pt": 9.5,
+      "line_height": 1.5
+    }
+  },
+
+  "layout": {
+    "kind": "single-column",
+    "container_max_px": 820,
+    "section_gap_px": 72,
+    "page_padding_x_px": 32,
+    "page_padding_y_px": 80
+  },
+
+  "tokens": {
+    "background": "#0B1020",
+    "surface": "#11172B",
+    "ink": "#E6E4DF",
+    "ink_muted": "#8A8F9E",
+    "border": "#1F2640",
+    "radius_card_px": 4,
+    "radius_button_px": 4,
+    "radius_image_px": 4
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "terminal-prompt",   "visible": true, "order": 1, "options": { "show_availability_pill": true, "show_cursor_blink": true, "command_prefix": "~/" } },
+    { "id": "about",      "type": "about",      "layout": "single-prose",      "visible": true, "order": 2, "options": { "show_heading_glyph": "##" } },
+    { "id": "work",       "type": "projects",   "layout": "code-block-cards",  "visible": true, "order": 3, "options": { "show_status": true, "show_tagline": true, "show_tech": true, "max_visible": 6, "ascii_separators": true } },
+    { "id": "experience", "type": "experience", "layout": "timeline",          "visible": true, "order": 4, "options": { "show_highlights": true } },
+    { "id": "education",  "type": "education",  "layout": "compact-list",      "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "category-chips",    "visible": true, "order": 6, "options": { "style": "mono_chips" } },
+    { "id": "contact",    "type": "contact",    "layout": "command-list",      "visible": true, "order": 7 }
+  ]
+}

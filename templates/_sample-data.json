@@ -1,0 +1,190 @@
+{
+  "user": {
+    "name": "Hadia Naveed",
+    "handle": "hadia",
+    "headline": "Frontend lead & design systems engineer",
+    "pronouns": "she/her",
+    "location": "Berlin, Germany",
+    "available": true,
+    "availability_text": "Available · Senior IC roles · Q3 2026",
+    "avatar_url": null,
+    "cover_image_url": null,
+    "bio_short": "Frontend lead and design-systems engineer building tools that turn structured data into beautiful surfaces.",
+    "bio_long": "Frontend lead with nine years building products at the seam of design and engineering. Currently shipping a donor management platform at Givency; previously at Pulse and Studio X. I care most about the slow, careful work — design systems, accessibility, performance budgets, and the quiet polish that makes products feel intentional.",
+    "email": "hadia@profolyo.me",
+    "social": [
+      { "type": "github",   "url": "https://github.com/hadia",        "label": "github.com/hadia" },
+      { "type": "twitter",  "url": "https://twitter.com/hadianaveed", "label": "@hadianaveed" },
+      { "type": "linkedin", "url": "https://linkedin.com/in/hadia",   "label": "in/hadia" },
+      { "type": "readcv",   "url": "https://read.cv/hadia",           "label": "read.cv/hadia" }
+    ]
+  },
+
+  "projects": [
+    {
+      "id": "p_01",
+      "slug": "givency",
+      "title": "Givency",
+      "tagline": "Donor management for mid-sized nonprofits",
+      "description": "B2B SaaS for nonprofits to manage recurring donor relationships, cohort retention, and board reporting.",
+      "role": "Frontend Lead",
+      "period": "2021 — 2024",
+      "team": "6 engineers, 1 designer",
+      "status": "live",
+      "cover_image_url": null,
+      "cover_color": "linear-gradient(135deg, #FFD4A8, #E76F51, #C44536)",
+      "tech_stack": ["React", "TypeScript", "Firebase", "Node.js", "Stripe", "Algolia"],
+      "links": [
+        { "type": "live", "url": "https://givency.com", "label": "Visit live" },
+        { "type": "case_study", "url": "/projects/givency", "label": "Case study" }
+      ],
+      "featured": true
+    },
+    {
+      "id": "p_02",
+      "slug": "create-profolyo-app",
+      "title": "create-profolyo-app",
+      "tagline": "CLI to scaffold self-hosted Profolyo with custom branding",
+      "description": "Open-source command-line tool for spinning up a self-hosted Profolyo instance.",
+      "role": "Maintainer",
+      "period": "2025 — present",
+      "status": "in_progress",
+      "cover_color": "linear-gradient(160deg, #B8C7FF, #B8A0FF)",
+      "tech_stack": ["Node.js", "TypeScript", "OSS"],
+      "links": [
+        { "type": "repo", "url": "https://github.com/hadia/create-profolyo-app", "label": "View repo" }
+      ],
+      "featured": true
+    },
+    {
+      "id": "p_03",
+      "slug": "pulse",
+      "title": "Pulse",
+      "tagline": "Real-time metrics dashboard for ops teams",
+      "description": "Live dashboard for operations teams. Sunset January 2025 after acquisition.",
+      "role": "Senior Engineer",
+      "period": "2019 — 2021",
+      "status": "archived",
+      "cover_color": "#0F1410",
+      "tech_stack": ["Vue", "WebSocket", "D3"],
+      "links": [],
+      "featured": true
+    },
+    {
+      "id": "p_04",
+      "slug": "field-notes",
+      "title": "Field Notes",
+      "tagline": "Markdown CMS for engineering teams",
+      "description": "Lightweight Markdown CMS with git-backed storage, built for engineering docs.",
+      "role": "Sole maintainer",
+      "period": "2023 — present",
+      "status": "live",
+      "cover_color": "linear-gradient(150deg, #F4E8D0, #C4A57B)",
+      "tech_stack": ["Next.js", "MDX", "GitHub API"],
+      "links": [{ "type": "live", "url": "https://fieldnotes.dev", "label": "Visit" }],
+      "featured": true
+    },
+    {
+      "id": "p_05",
+      "slug": "lumen",
+      "title": "Lumen",
+      "tagline": "Tiny privacy-first analytics for indie hackers",
+      "description": "Sub-1KB analytics script. No cookies. Ships event data to your own database.",
+      "role": "Co-founder",
+      "period": "2022 — 2023",
+      "status": "live",
+      "cover_color": "linear-gradient(135deg, #2A6FDB, #1F4FB0)",
+      "tech_stack": ["TypeScript", "Cloudflare Workers", "Postgres"],
+      "links": [{ "type": "live", "url": "https://uselumen.dev", "label": "Visit" }],
+      "featured": true
+    },
+    {
+      "id": "p_06",
+      "slug": "cohort",
+      "title": "Cohort",
+      "tagline": "Recurring donor retention insights",
+      "description": "An internal Givency tool that became a customer feature. Cohort-style retention curves for recurring donors.",
+      "role": "Frontend Lead",
+      "period": "2022",
+      "status": "archived",
+      "cover_color": "linear-gradient(135deg, #E8C8FF, #7C5AFF)",
+      "tech_stack": ["React", "D3", "Prisma"],
+      "links": [],
+      "featured": false
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "Givency",
+      "title": "Frontend Lead",
+      "period": "2021 — 2024",
+      "location": "Berlin",
+      "description": "Owned design system, accessibility, and frontend performance for the donor-management product.",
+      "highlights": [
+        "Built the editor with Tiptap and DnD-Kit; shipped weekly for 18 months.",
+        "Migrated marketing site to App Router; cut TBT by 62%.",
+        "Hired and mentored 3 frontend engineers."
+      ]
+    },
+    {
+      "company": "Pulse Inc.",
+      "title": "Senior Frontend Engineer",
+      "period": "2019 — 2021",
+      "location": "Remote",
+      "description": "Built the real-time metrics dashboard from prototype to acquisition.",
+      "highlights": [
+        "Designed WebSocket-backed live charts handling 10k events/sec.",
+        "Co-led migration from Vue 2 to Vue 3 with zero downtime."
+      ]
+    },
+    {
+      "company": "Studio X",
+      "title": "Frontend Engineer",
+      "period": "2017 — 2019",
+      "location": "Karachi",
+      "description": "Agency work for SaaS and fintech clients across Pakistan and the Gulf."
+    },
+    {
+      "company": "Freelance",
+      "title": "Designer & Developer",
+      "period": "2015 — 2017",
+      "location": "Karachi",
+      "description": "WordPress, Shopify, and the occasional brand identity for early-stage clients."
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Technische Universität Berlin",
+      "degree": "M.S. Human-Computer Interaction",
+      "period": "2017 — 2019",
+      "location": "Berlin"
+    },
+    {
+      "institution": "National University of Sciences & Technology",
+      "degree": "B.S. Computer Science",
+      "period": "2013 — 2017",
+      "location": "Islamabad"
+    }
+  ],
+
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["TypeScript", "JavaScript", "Python", "SQL", "Go"]
+    },
+    {
+      "category": "Frameworks",
+      "items": ["React", "Next.js", "Tailwind", "shadcn/ui", "Prisma"]
+    },
+    {
+      "category": "Design",
+      "items": ["Figma", "Design Systems", "Storybook", "Tokens Studio", "Accessibility"]
+    },
+    {
+      "category": "Infra & Tooling",
+      "items": ["PostgreSQL", "Redis", "Stripe", "Vercel", "GitHub Actions", "Sentry"]
+    }
+  ]
+}

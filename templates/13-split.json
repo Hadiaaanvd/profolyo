@@ -1,0 +1,49 @@
+{
+  "id": "split",
+  "name": "Split",
+  "tagline": "Colored sticky sidebar with numbered scrollable main",
+  "description": "Two worlds in one viewport. A rich-colored sidebar holds your identity while the main column scrolls through numbered sections. Projects as compact thumbnail rows. Bold and organized.",
+  "best_for": ["product designers", "design systems engineers", "UX leads", "product managers"],
+  "preview_image": "/templates/split.png",
+
+  "defaults": {
+    "accent_color": "#6B2737",
+    "color_mode": "light",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700], "font_size_pt": 14, "line_height": 1.05, "letter_spacing_em": -0.02 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400, 500], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "sidebar-main",
+    "container_max_px": 1400,
+    "section_gap_px": 72,
+    "page_padding_x_px": 56,
+    "page_padding_y_px": 64
+  },
+
+  "tokens": {
+    "background": "#FCFBF9",
+    "surface": "#FFFFFF",
+    "ink": "#1A1916",
+    "ink_muted": "#6B6960",
+    "border": "#E8E4DC",
+    "radius_card_px": 8,
+    "radius_button_px": 6,
+    "radius_image_px": 6
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "sidebar",        "visible": true, "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "thumbnail-rows", "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "prose",          "visible": true, "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "timeline",       "visible": true, "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "compact",        "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "tag-cloud",      "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "inline",         "visible": true, "order": 999 }
+  ]
+}

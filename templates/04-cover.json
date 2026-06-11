@@ -1,0 +1,49 @@
+{
+  "id": "cover",
+  "name": "Cover",
+  "tagline": "Full-bleed cover photo with dark editorial layout",
+  "description": "A dramatic dark portfolio anchored by a full-width cover image. 96px display name, alternating project spreads, and a cinematic overall feel. For portfolios that want to be remembered.",
+  "best_for": ["photographers", "art directors", "visual designers", "film makers"],
+  "preview_image": "/templates/cover.png",
+
+  "defaults": {
+    "accent_color": "#CFAD7A",
+    "color_mode": "dark",
+    "density": "spacious"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700, 800], "font_size_pt": 18, "line_height": 0.95, "letter_spacing_em": -0.04 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "full-width",
+    "container_max_px": 1200,
+    "section_gap_px": 96,
+    "page_padding_x_px": 40,
+    "page_padding_y_px": 80
+  },
+
+  "tokens": {
+    "background": "#0F0E0B",
+    "surface": "#1A1915",
+    "ink": "#F2F0EB",
+    "ink_muted": "#8B8880",
+    "border": "#2C2A26",
+    "radius_card_px": 8,
+    "radius_button_px": 4,
+    "radius_image_px": 8
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "full-cover",     "visible": true, "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "alternating",    "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "centered-prose", "visible": true, "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "compact-rows",   "visible": true, "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "compact-rows",   "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "inline-list",    "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "centered-dark",  "visible": true, "order": 999 }
+  ]
+}

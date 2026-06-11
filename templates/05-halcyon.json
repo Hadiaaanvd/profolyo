@@ -1,0 +1,49 @@
+{
+  "id": "halcyon",
+  "name": "Halcyon",
+  "tagline": "Dark portfolio with sticky nav and featured project hero",
+  "description": "Calm confidence in the dark. Sticky navigation, large hero with stat pills, a featured project card front-and-center, and a clean experience timeline. For engineers and senior ICs who mean business.",
+  "best_for": ["senior engineers", "tech leads", "startup CTOs", "fullstack developers"],
+  "preview_image": "/templates/halcyon.png",
+
+  "defaults": {
+    "accent_color": "#0E6FFF",
+    "color_mode": "dark",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700], "font_size_pt": 14, "line_height": 1.05, "letter_spacing_em": -0.025 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400, 500], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "single-column",
+    "container_max_px": 1080,
+    "section_gap_px": 80,
+    "page_padding_x_px": 32,
+    "page_padding_y_px": 96
+  },
+
+  "tokens": {
+    "background": "#0A0B0D",
+    "surface": "#13151A",
+    "ink": "#F4F4F0",
+    "ink_muted": "#9CA3AF",
+    "border": "#1F2328",
+    "radius_card_px": 12,
+    "radius_button_px": 8,
+    "radius_image_px": 10
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "dark-hero",     "visible": true, "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "featured-grid", "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "prose",         "visible": true, "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "timeline",      "visible": true, "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "compact",       "visible": true, "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "tag-cloud",     "visible": true, "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "cta-button",    "visible": true, "order": 999 }
+  ]
+}

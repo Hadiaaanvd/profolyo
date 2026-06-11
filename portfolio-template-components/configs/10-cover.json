@@ -1,0 +1,25 @@
+{
+  "id": "cover",
+  "name": "Cover",
+  "tagline": "Full-bleed cover hero, sparse type, gallery-feel",
+  "description": "A photo-first portfolio that opens with a full-screen cover image. Type stays out of the way. Each project gets a generous image, name beneath. Built for portfolios where the visuals carry the message.",
+  "best_for": ["photographers", "art directors", "motion designers", "anyone with strong imagery"],
+  "preview_image": "/templates/cover.png",
+  "defaults": { "accent_color": "#0F0E0B", "color_mode": "light", "density": "spacious" },
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [400, 500], "font_size_pt": 14, "line_height": 1.05, "letter_spacing_em": -0.03 },
+    "body":    { "font_family": "Inter",                "font_weights": [400, 500], "font_size_pt": 11, "line_height": 1.55, "letter_spacing_em": -0.005 },
+    "mono":    { "font_family": "JetBrains Mono",       "font_weights": [400, 500], "font_size_pt": 9.5, "line_height": 1.5 }
+  },
+  "layout": { "kind": "gallery", "container_max_px": 1480, "section_gap_px": 120, "page_padding_x_px": 32, "page_padding_y_px": 0 },
+  "tokens": { "background": "#0F0E0B", "surface": "#1A1814", "ink": "#FAFAF7", "ink_muted": "#A29F92", "border": "#34332E", "radius_card_px": 0, "radius_button_px": 999, "radius_image_px": 0 },
+  "sections": [
+    { "id": "cover",      "type": "hero",       "layout": "fullbleed-photo", "visible": true, "order": 1 },
+    { "id": "work",       "type": "projects",   "layout": "gallery",         "visible": true, "order": 2, "options": { "show_status": false } },
+    { "id": "about",      "type": "about",      "layout": "centered-prose",  "visible": true, "order": 3 },
+    { "id": "experience", "type": "experience", "layout": "compact-list",    "visible": true, "order": 4 },
+    { "id": "education",  "type": "education",  "layout": "compact-list",    "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "comma-list",      "visible": true, "order": 6 },
+    { "id": "contact",    "type": "contact",    "layout": "centered-cta",    "visible": true, "order": 7 }
+  ]
+}

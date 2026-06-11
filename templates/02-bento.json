@@ -1,0 +1,49 @@
+{
+  "id": "bento",
+  "name": "Bento",
+  "tagline": "6-column bento grid with personality",
+  "description": "Your portfolio as a bento box: asymmetric cells of varying sizes arrange your work, stats, and identity into a visual grid. Playful structure, serious content.",
+  "best_for": ["product designers", "frontend engineers", "startup founders", "creative technologists"],
+  "preview_image": "/templates/bento.png",
+
+  "defaults": {
+    "accent_color": "#6D5AE6",
+    "color_mode": "light",
+    "density": "comfortable"
+  },
+
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700], "font_size_pt": 14, "line_height": 1.05, "letter_spacing_em": -0.025 },
+    "body": { "font_family": "Inter", "font_weights": [400, 500], "font_size_pt": 10.5, "line_height": 1.6, "letter_spacing_em": 0 },
+    "mono": { "font_family": "JetBrains Mono", "font_weights": [400, 500], "font_size_pt": 9, "line_height": 1.5 }
+  },
+
+  "layout": {
+    "kind": "bento-grid",
+    "container_max_px": 1200,
+    "section_gap_px": 20,
+    "page_padding_x_px": 32,
+    "page_padding_y_px": 32
+  },
+
+  "tokens": {
+    "background": "#ECECEE",
+    "surface": "#FFFFFF",
+    "ink": "#111110",
+    "ink_muted": "#787774",
+    "border": "#E2E0DC",
+    "radius_card_px": 16,
+    "radius_button_px": 999,
+    "radius_image_px": 10
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "bento-hero",    "visible": true,  "order": 0 },
+    { "id": "projects",   "type": "projects",   "layout": "bento-cards",   "visible": true,  "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "bento-cell",    "visible": true,  "order": 2 },
+    { "id": "experience", "type": "experience", "layout": "bento-list",    "visible": true,  "order": 3 },
+    { "id": "education",  "type": "education",  "layout": "bento-compact", "visible": true,  "order": 4 },
+    { "id": "skills",     "type": "skills",     "layout": "bento-tags",    "visible": true,  "order": 5 },
+    { "id": "contact",    "type": "contact",    "layout": "bento-strip",   "visible": true,  "order": 999 }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "story",
+  "name": "Story",
+  "tagline": "Long-form scroll portfolio — each project a hero",
+  "description": "A cinematic narrative scroll. Every project gets its own full-section hero with the project name set massive, followed by deeper context. Built for portfolios where the journey matters.",
+  "best_for": ["founders", "builders", "long-tenure designers", "anyone with a story to tell"],
+  "preview_image": "/templates/story.png",
+  "defaults": { "accent_color": "#1A30B8", "color_mode": "light", "density": "spacious" },
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [700, 800], "font_size_pt": 14, "line_height": 0.95, "letter_spacing_em": -0.035 },
+    "body":    { "font_family": "Inter",                "font_weights": [400, 500], "font_size_pt": 11, "line_height": 1.6,  "letter_spacing_em": -0.005 },
+    "mono":    { "font_family": "JetBrains Mono",       "font_weights": [400, 500], "font_size_pt": 9.5, "line_height": 1.5 }
+  },
+  "layout": { "kind": "scroll-narrative", "container_max_px": 1080, "section_gap_px": 160, "page_padding_x_px": 48, "page_padding_y_px": 0 },
+  "tokens": { "background": "#FAFAF7", "surface": "#FFFFFF", "ink": "#0A0A09", "ink_muted": "#54514A", "border": "#ECEAE2", "radius_card_px": 0, "radius_button_px": 6, "radius_image_px": 0 },
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "fullscreen-intro", "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "centered-prose",   "visible": true, "order": 2 },
+    { "id": "work",       "type": "projects",   "layout": "story-sections",   "visible": true, "order": 3, "options": { "show_status": true, "show_tech": true } },
+    { "id": "experience", "type": "experience", "layout": "compact-list",     "visible": true, "order": 4 },
+    { "id": "education",  "type": "education",  "layout": "compact-list",     "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "category-chips",   "visible": true, "order": 6 },
+    { "id": "contact",    "type": "contact",    "layout": "centered-cta",     "visible": true, "order": 7 }
+  ]
+}

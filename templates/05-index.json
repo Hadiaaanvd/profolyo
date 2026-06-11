@@ -1,0 +1,66 @@
+{
+  "id": "index",
+  "name": "Index",
+  "tagline": "Visual-first card grid for portfolios with many projects",
+  "description": "Pinterest / Are.na-style masonry. Every project gets a tile sized to its own image, with filter chips above. Compact bio, work front and center.",
+  "best_for": ["PMs", "generalists", "photographers", "illustrators", "anyone with 10+ projects"],
+  "preview_image": "/templates/index.png",
+
+  "defaults": {
+    "accent_color": "#C44536",
+    "color_mode": "light",
+    "density": "compact"
+  },
+
+  "typography": {
+    "heading": {
+      "font_family": "Bricolage Grotesque",
+      "font_weights": [600, 700],
+      "font_size_pt": 12,
+      "line_height": 1.1,
+      "letter_spacing_em": -0.02
+    },
+    "body": {
+      "font_family": "Inter",
+      "font_weights": [400, 500],
+      "font_size_pt": 10,
+      "line_height": 1.5,
+      "letter_spacing_em": 0
+    },
+    "mono": {
+      "font_family": "JetBrains Mono",
+      "font_weights": [400, 500],
+      "font_size_pt": 9,
+      "line_height": 1.4
+    }
+  },
+
+  "layout": {
+    "kind": "single-column",
+    "container_max_px": 1440,
+    "section_gap_px": 64,
+    "page_padding_x_px": 32,
+    "page_padding_y_px": 48
+  },
+
+  "tokens": {
+    "background": "#FAFAF7",
+    "surface": "#FFFFFF",
+    "ink": "#1F1E1A",
+    "ink_muted": "#6F6D63",
+    "border": "#ECEAE2",
+    "radius_card_px": 10,
+    "radius_button_px": 999,
+    "radius_image_px": 10
+  },
+
+  "sections": [
+    { "id": "hero",       "type": "hero",       "layout": "compact-strip",     "visible": true, "order": 1, "options": { "show_availability_pill": true, "show_avatar": true, "show_socials": true } },
+    { "id": "work",       "type": "projects",   "layout": "masonry-grid",      "visible": true, "order": 2, "options": { "show_status": true, "show_tagline": true, "show_tech": false, "max_visible": 6, "filterable": true, "columns": 3, "varied_heights": true } },
+    { "id": "about",      "type": "about",      "layout": "section-heading",  "visible": true, "order": 3, "options": { "max_width_ch": 56 } },
+    { "id": "experience", "type": "experience", "layout": "compact-list",      "visible": true, "order": 4, "options": { "show_highlights": false } },
+    { "id": "education",  "type": "education",  "layout": "compact-list",      "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "category-chips",    "visible": true, "order": 6, "options": { "style": "small_chips" } },
+    { "id": "contact",    "type": "contact",    "layout": "inline-list",       "visible": true, "order": 7 }
+  ]
+}

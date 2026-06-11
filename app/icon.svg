@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="56" fill="#FAFAF7"/>
+  <text
+    x="40" y="205"
+    font-family="'Bricolage Grotesque', 'Arial Black', ui-sans-serif, system-ui, sans-serif"
+    font-weight="700"
+    font-size="200"
+    letter-spacing="-8"
+    fill="#0A0A09"
+  >P<tspan fill="#3358FF">.</tspan></text>
+</svg>

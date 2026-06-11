@@ -1,0 +1,25 @@
+{
+  "id": "press",
+  "name": "Press",
+  "tagline": "Newsprint-style editorial portfolio",
+  "description": "A serif-driven, magazine-feel portfolio. Drop caps, multi-column body, classical hierarchy. Looks like reading a beautifully typeset journal.",
+  "best_for": ["writers", "researchers", "academics", "op-ed designers"],
+  "preview_image": "/templates/press.png",
+  "defaults": { "accent_color": "#7C2D12", "color_mode": "light", "density": "comfortable" },
+  "typography": {
+    "heading": { "font_family": "Bricolage Grotesque", "font_weights": [600, 700], "font_size_pt": 13, "line_height": 1.05, "letter_spacing_em": -0.02 },
+    "body":    { "font_family": "Source Serif 4",      "font_weights": [400, 600], "font_size_pt": 11, "line_height": 1.65, "letter_spacing_em": 0 },
+    "mono":    { "font_family": "JetBrains Mono",      "font_weights": [400, 500], "font_size_pt": 9.5, "line_height": 1.5 }
+  },
+  "layout": { "kind": "newsprint", "container_max_px": 1080, "section_gap_px": 80, "page_padding_x_px": 40, "page_padding_y_px": 80 },
+  "tokens": { "background": "#FAF7EE", "surface": "#FFFFFF", "ink": "#1A1814", "ink_muted": "#5C544A", "border": "#D9D2BD", "radius_card_px": 0, "radius_button_px": 0, "radius_image_px": 0 },
+  "sections": [
+    { "id": "masthead",   "type": "hero",       "layout": "masthead",       "visible": true, "order": 1 },
+    { "id": "about",      "type": "about",      "layout": "drop-cap",       "visible": true, "order": 2 },
+    { "id": "work",       "type": "projects",   "layout": "feature-rows",   "visible": true, "order": 3, "options": { "show_status": true, "show_tagline": true, "show_tech": true } },
+    { "id": "experience", "type": "experience", "layout": "two-column-row", "visible": true, "order": 4 },
+    { "id": "education",  "type": "education",  "layout": "two-column-row", "visible": true, "order": 5 },
+    { "id": "skills",     "type": "skills",     "layout": "comma-list",     "visible": true, "order": 6 },
+    { "id": "contact",    "type": "contact",    "layout": "byline",         "visible": true, "order": 7 }
+  ]
+}
