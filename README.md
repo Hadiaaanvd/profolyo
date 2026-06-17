@@ -70,13 +70,7 @@ To add a new portfolio section or template:
 
 ## Deployment
 
-This project can deploy to any platform that supports Next.js. Common options include:
-
-- Vercel
-- Netlify (with Next.js adapter)
-- Railway
-
-If you use Vercel, connect the repository and set the deployment branch.
+The app is live at [profolyo.me](https://profolyo.me), hosted on **Vercel** with the domain registered on **Cloudflare**.
 
 ## GitHub Push Instructions
 
