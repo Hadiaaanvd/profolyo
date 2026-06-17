@@ -1,6 +1,8 @@
-# Profolyo
+<img width="1373" height="433" alt="image" src="https://github.com/user-attachments/assets/156c5ae2-9030-4bf8-a784-2b783d356766" /># Profolyo
 
 Profolyo is a portfolio builder and editor built with Next.js 16, React 19, Tailwind CSS, and TipTap. It focuses on dynamic portfolio creation, editable portfolio sections, and reusable template components for developer, designers and creators.
+
+The app is live at [profolyo.me](https://profolyo.me)
 
 ## Key Features
 
