@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       id="top"
       className="relative overflow-hidden"
-      style={{ padding: "64px 0 96px" }}
+      style={{ padding: "clamp(32px, 6vw, 64px) 0 clamp(48px, 8vw, 96px)" }}
     >
       {/* Background blobs */}
       <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1280px] mx-auto px-8">
+      <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-8">
         {/* Beta pill */}
         <span
           className="inline-flex items-center gap-[7px] rounded-full text-green-700 font-medium mb-0"

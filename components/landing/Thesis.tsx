@@ -1,6 +1,6 @@
 export default function Thesis() {
   return (
-    <section id="why" className="py-24 px-8">
+    <section id="why" className="py-16 px-4 sm:py-24 sm:px-8">
       <div className="max-w-[1280px] mx-auto">
         {/* Section head */}
         <div className="mb-16" style={{ maxWidth: 720 }}>

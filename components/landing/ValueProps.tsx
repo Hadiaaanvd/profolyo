@@ -35,7 +35,7 @@ export default function ValueProps() {
   return (
     <section
       id="why-pro"
-      className="py-24 px-8"
+      className="py-16 px-4 sm:py-24 sm:px-8"
       style={{ background: "var(--color-ink-0)", borderTop: "1px solid var(--color-ink-150)", borderBottom: "1px solid var(--color-ink-150)" }}
     >
       <div className="max-w-[1280px] mx-auto">

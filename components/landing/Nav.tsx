@@ -3,7 +3,7 @@ import Logo from "@/components/ui/Logo";
 export default function Nav() {
   return (
     <header
-      className="sticky top-0 z-50 flex items-center gap-7 px-8 border-b"
+      className="sticky top-0 z-50 flex items-center gap-4 sm:gap-7 px-4 sm:px-8 border-b"
       style={{
         height: 56,
         background: "color-mix(in srgb, var(--color-ink-50) 80%, transparent)",
