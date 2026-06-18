@@ -382,7 +382,7 @@ export default function EditorSidebar() {
           {!collapsed && (
             <div className="leading-[1.3] min-w-0">
               <div className="text-[12px] font-medium text-ink-800 truncate">{portfolio.user.name || <span className="text-ink-300 italic">Your name</span>}</div>
-              <div className="font-mono text-[10px] text-ink-400 truncate">{portfolio.user.handle ? `profolyo.me/${portfolio.user.handle}` : "profolyo.me/…"}</div>
+              <div className="font-mono text-[10px] text-ink-400 truncate">{portfolio.user.handle ? <a href={`https://profolyo.me/${portfolio.user.handle}`} target="_blank" rel="noopener noreferrer" className="text-ink-400 hover:text-ink-600 transition-colors" style={{ textDecoration: "none" }}>profolyo.me/{portfolio.user.handle}</a> : "profolyo.me/…"}</div>
             </div>
           )}
         </div>
