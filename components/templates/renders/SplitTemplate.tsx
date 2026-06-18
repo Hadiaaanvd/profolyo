@@ -325,7 +325,7 @@ export default function SplitTemplate({ portfolio, accent, sections, headingFont
     : { display: "grid", gridTemplateColumns: "minmax(340px, 42%) 1fr" };
 
   return (
-    <div style={{ background: "rgb(252, 251, 249)", color: ink, fontFamily: body, fontSize: 15, lineHeight: 1.6, minHeight: "100%", ...wrapperStyle }}>
+    <div style={{ background: "rgb(252, 251, 249)", color: ink, fontFamily: body, fontSize: 15, lineHeight: 1.6, minHeight: "100vh", ...wrapperStyle }}>
 
       {/* ── SIDEBAR ── */}
       {sectionVisible(sections, "hero") && (
@@ -335,7 +335,7 @@ export default function SplitTemplate({ portfolio, accent, sections, headingFont
             color: sidebarFg,
             position: m ? "relative" : "sticky",
             top: 0,
-            height: m ? "auto" : "100vh",
+            height: m ? "auto" : "100%",
             maxHeight: m ? undefined : 920,
             padding: m ? "40px 32px" : "56px 48px",
             display: "flex",
