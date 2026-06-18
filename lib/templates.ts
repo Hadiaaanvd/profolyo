@@ -2,7 +2,6 @@ import type { TemplateWithMeta } from "@/types/template";
 import type { SectionConfig } from "@/types/portfolio";
 
 import atelier  from "@/templates/01-atelier.json";
-import bento    from "@/templates/02-bento.json";
 import console_ from "@/templates/03-console.json";
 import cover    from "@/templates/04-cover.json";
 import halcyon  from "@/templates/05-halcyon.json";
@@ -19,7 +18,6 @@ import timeline from "@/templates/15-timeline.json";
 
 const TAG_MAP: Record<string, string> = {
   atelier:  "STUDIO SPLIT",
-  bento:    "BENTO GRID",
   console:  "DARK · DEV",
   cover:    "DARK · PHOTO",
   halcyon:  "DARK · MINIMAL",
@@ -60,7 +58,7 @@ const EXTENDED_SECTIONS: SectionConfig[] = [
   { id: "volunteer",      type: "volunteer",      label: "Volunteer",      visible: false, order: 105 },
 ];
 
-const raw = [atelier, bento, console_, cover, halcyon, index, ledger, marquee, press, prism, showcase, showreel, split, studio, timeline];
+const raw = [atelier, console_, cover, halcyon, index, ledger, marquee, press, prism, showcase, showreel, split, studio, timeline];
 
 export const templates: TemplateWithMeta[] = raw.map((t) => ({
   ...(t as unknown as TemplateWithMeta),
