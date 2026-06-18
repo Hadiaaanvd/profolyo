@@ -4,7 +4,6 @@ import type { Template } from "@/types/template";
 import { getHeadingFont, getBodyFont } from "@/lib/fonts";
 
 import AtelierTemplate  from "./renders/AtelierTemplate";
-import BentoTemplate    from "./renders/BentoTemplate";
 import ConsoleTemplate  from "./renders/ConsoleTemplate";
 import CoverTemplate    from "./renders/CoverTemplate";
 import HalcyonTemplate  from "./renders/HalcyonTemplate";
@@ -38,7 +37,6 @@ export default function PortfolioPage({ portfolio, template, accentColor, headin
 
   switch (template.id) {
     case "atelier":  return <AtelierTemplate  {...props} />;
-    case "bento":    return <BentoTemplate    {...props} />;
     case "console":  return <ConsoleTemplate  {...props} />;
     case "cover":    return <CoverTemplate    {...props} />;
     case "halcyon":  return <HalcyonTemplate  {...props} />;
