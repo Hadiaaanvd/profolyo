@@ -42,9 +42,19 @@ export default function EditorHeader() {
   return (
     <header className="flex items-center justify-between px-5 py-3 border-b border-ink-150 bg-ink-0 shrink-0">
       <div className="flex items-center gap-3">
-        <span className="text-[13px] text-ink-400 font-mono">
-          {handle ? `profolyo.me/${handle}` : <span className="italic">Set a handle to get your URL</span>}
-        </span>
+        {handle ? (
+          <a
+            href={`https://profolyo.me/${handle}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[13px] text-ink-400 font-mono hover:text-ink-600 transition-colors"
+            style={{ textDecoration: "none" }}
+          >
+            profolyo.me/{handle}
+          </a>
+        ) : (
+          <span className="text-[13px] text-ink-400 font-mono italic">Set a handle to get your URL</span>
+        )}
         {/* Auto-save indicator */}
         {saveStatus !== "idle" && (
           <span

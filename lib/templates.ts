@@ -86,12 +86,14 @@ export function getDefaultSections(template: TemplateWithMeta): SectionConfig[] 
       order: i + 1,           // 1-based; hero is 0, contact is 999
     }));
 
+  const builtInTypes = new Set(builtIn.map((s) => s.type));
+  const extras = EXTENDED_SECTIONS.filter((s) => !builtInTypes.has(s.type));
   const maxOrder = builtIn.length + 1;
 
   return [
     { id: "hero",    type: "about",    label: "Hero",    visible: true, order: 0   },
     ...builtIn,
-    ...EXTENDED_SECTIONS.map((s, i) => ({ ...s, order: maxOrder + i })),
+    ...extras.map((s, i) => ({ ...s, order: maxOrder + i })),
     { id: "contact", type: "about",    label: "Contact", visible: true, order: 999 },
   ];
 }
