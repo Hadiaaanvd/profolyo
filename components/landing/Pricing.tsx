@@ -1,14 +1,14 @@
 export default function Pricing() {
   return (
-    <section id="pricing" style={{ padding: "96px 0" }}>
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section id="pricing" style={{ padding: "clamp(48px, 8vw, 96px) 0" }}>
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
         <div
           className="relative overflow-hidden text-center"
           style={{
             background: "var(--color-ink-900)",
             color: "var(--color-ink-50)",
             borderRadius: 28,
-            padding: "80px 64px",
+            padding: "clamp(40px, 6vw, 80px) clamp(20px, 5vw, 64px)",
           }}
         >
           <div

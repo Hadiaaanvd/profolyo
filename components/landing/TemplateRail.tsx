@@ -3,7 +3,7 @@ import TemplatePreview from "@/components/ui/TemplatePreview";
 
 export default function TemplateRail() {
   return (
-    <section id="templates" className="py-24 px-8">
+    <section id="templates" className="py-16 px-4 sm:py-24 sm:px-8">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <div className="mb-12" style={{ maxWidth: 760 }}>

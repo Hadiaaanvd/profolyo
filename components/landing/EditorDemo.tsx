@@ -18,7 +18,7 @@ export default function EditorDemo() {
   return (
     <section
       id="editor"
-      className="py-24 px-8"
+      className="py-16 px-4 sm:py-24 sm:px-8"
       style={{ background: "var(--color-ink-0)", borderTop: "1px solid var(--color-ink-150)", borderBottom: "1px solid var(--color-ink-150)" }}
     >
       <div className="max-w-[1280px] mx-auto">
@@ -38,7 +38,7 @@ export default function EditorDemo() {
             <br />
             structured data feel easy<span className="text-brand-500">.</span>
           </h2>
-          <p className="text-ink-600" style={{ fontSize: 20, lineHeight: 1.55, margin: 0 }}>
+          <p className="text-ink-600" style={{ fontSize: "clamp(16px, 2vw, 20px)", lineHeight: 1.55, margin: 0 }}>
             A focused editor. Drag to reorder. Auto-save on blur. Live preview that mirrors your published portfolio in real time. Import from GitHub, paste from LinkedIn, or start blank.
           </p>
         </div>
@@ -65,13 +65,10 @@ export default function EditorDemo() {
             </div>
           </div>
 
-          {/* 3-col body */}
-          <div
-            className="grid"
-            style={{ gridTemplateColumns: "200px 1fr 300px", minHeight: 520 }}
-          >
+          {/* 3-col body — sidebar & preview hidden on mobile */}
+          <div className="flex overflow-hidden" style={{ minHeight: 400 }}>
             {/* Sidebar */}
-            <aside className="bg-ink-50 border-r border-ink-150" style={{ padding: "20px 12px" }}>
+            <aside className="hidden lg:block bg-ink-50 border-r border-ink-150 shrink-0" style={{ width: 200, padding: "20px 12px" }}>
               <div
                 className="font-display font-bold text-ink-900"
                 style={{ fontSize: 18, letterSpacing: "-0.03em", lineHeight: 1, padding: "0 6px 18px" }}
@@ -110,7 +107,7 @@ export default function EditorDemo() {
             </aside>
 
             {/* Main */}
-            <main style={{ padding: "24px 28px", background: "var(--color-ink-0)", overflow: "hidden" }}>
+            <main className="flex-1 min-w-0" style={{ padding: "24px 16px", background: "var(--color-ink-0)", overflow: "hidden" }}>
               <div className="flex justify-between items-baseline" style={{ marginBottom: 18 }}>
                 <div>
                   <span
@@ -126,7 +123,7 @@ export default function EditorDemo() {
                     Selected work
                   </h4>
                 </div>
-                <div className="flex gap-1.5">
+                <div className="flex flex-wrap gap-1.5">
                   <button
                     type="button"
                     className="inline-flex items-center bg-ink-0 text-ink-800 border border-ink-200 rounded-[10px] hover:bg-ink-50 cursor-pointer"
@@ -172,7 +169,7 @@ export default function EditorDemo() {
             </main>
 
             {/* Right preview */}
-            <aside className="bg-ink-50 border-l border-ink-150" style={{ padding: 20 }}>
+            <aside className="hidden md:block bg-ink-50 border-l border-ink-150 shrink-0" style={{ width: 300, padding: 20 }}>
               <div className="flex items-center justify-between" style={{ marginBottom: 14 }}>
                 <span
                   className="font-mono font-medium text-ink-500 uppercase"

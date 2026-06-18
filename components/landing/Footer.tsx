@@ -4,14 +4,13 @@ const COMPANY_LINKS  = ["About", "Press kit", "Privacy", "Terms", "Contact"];
 
 export default function Footer() {
   return (
-    <footer style={{ padding: "56px 32px 36px", borderTop: "1px solid var(--color-ink-150)" }} aria-label="Site footer">
-      {/* 4-column grid */}
+    <footer className="px-4 sm:px-8" style={{ paddingTop: 56, paddingBottom: 36, borderTop: "1px solid var(--color-ink-150)" }} aria-label="Site footer">
+      {/* 4-column grid — stacks on mobile */}
       <div
-        className="max-w-[1280px] mx-auto grid gap-8"
-        style={{ gridTemplateColumns: "1.4fr 1fr 1fr 1fr" }}
+        className="max-w-[1280px] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8"
       >
         {/* Brand col */}
-        <div>
+        <div className="col-span-2 sm:col-span-1">
           <div
             className="font-display font-bold text-ink-900"
             style={{ fontSize: 20, letterSpacing: "-0.035em", marginBottom: 12 }}
